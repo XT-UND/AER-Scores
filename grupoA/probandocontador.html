@@ -146,9 +146,7 @@
                     <th>Points</th>
                 </tr>
             </thead>
-            <tr><td></td><td>---</td><td>---</td><td>---</td><td>---</td></tr>
-            <tr><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td></tr>
-            <tr><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td></tr>
+          
             <tbody id="scoreTable"></tbody>
         </table>
     </div>
@@ -192,7 +190,7 @@
             });
             let sortedTeams = Object.values(aggregated).sort((a, b) => b.points - a.points);
             while (sortedTeams.length < 12) {
-                sortedTeams.push({ name: "ㅤ", booyah: ㅤ, kills: ㅤ, points: ㅤ });
+                sortedTeams.push({ name: "///", booyah: 0 , kills: 0 , points: 0 });
             }
             return sortedTeams.slice(0, 12);
         }
